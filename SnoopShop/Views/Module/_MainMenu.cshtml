@@ -1,0 +1,6 @@
+﻿@model IEnumerable<SnoopShop.Models.mMenu>
+<a href="~/" class="text-white text-decoration-none mr-3">Trang Chủ</a>
+<a href="~/theo-doi-don-hang" class="text-white text-decoration-none mr-3">Theo dõi đơn hàng</a>
+@foreach (var t in Model)
+{
+<a href="~/@t.Link" class="text-white text-decoration-none mr-3">@t.Name</a>}
